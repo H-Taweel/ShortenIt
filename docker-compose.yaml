@@ -1,0 +1,11 @@
+version: '3'
+services:
+  database:
+    image: 'postgres:latest'
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: postgres # The PostgresSQL user (useful to connect to the database)
+      POSTGRES_PASSWORD: postgres # The PostgresSQL password (useful to connect to the database)
+      POSTGRES_DB: url-shortener-h-taweel
+#      POSTGRES_DB: urlShortenerDB

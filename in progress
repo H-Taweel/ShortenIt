@@ -1,0 +1,10 @@
+
+//TODO
+
+Mainly:
+make unit tests
+make integration test
+
+Secondary:
+if this is the case return the same key from the already stored url shortened.
+check when expanding the URL with a key that exists and give existing key
