@@ -29,6 +29,10 @@ public class URLShortenerController {
               .body(null); // handle expired or missing URLs
     }
   }
+
+  //  **********the following code would help to redirect according to URL HTTP response*************
+
+
   //  @GetMapping("/{key}")
   //  public void expand(@PathVariable final String key, HttpServletResponse response)
   //      throws URISyntaxException, IOException {
