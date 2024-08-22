@@ -1,13 +1,13 @@
-# URL Shortener
+# ShortenIt.app
 
-Template project for URL Shortener service.
+Project for URL Shortener service.
 
 ## Local setup
 
 Please install the following:
 
 * Maven
-* Java 17+
+* Java 19+
 * Curl
 * Postman (optional)
 
