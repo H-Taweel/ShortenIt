@@ -1,8 +1,12 @@
 package com.redi.shortener.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchConnectionDetails;
+
 import java.util.UUID;
 
+@Getter
 @Entity
 @Table(name = "users")
 public class UserI {
@@ -25,27 +29,15 @@ public class UserI {
     this.email = email;
   }
 
-  public UUID getId() {
-    return id;
-  }
-
   public void setId(UUID id) {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
+    public void setName(String name) {
     this.name = name;
   }
 
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
+    public void setEmail(String email) {
     this.email = email;
   }
 }

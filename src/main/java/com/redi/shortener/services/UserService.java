@@ -13,7 +13,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-  @Autowired private final UserRepository userRepository;
+  @Autowired
+  private final UserRepository userRepository;
 
   public UserService(UserRepository userRepository) {
     this.userRepository = userRepository;
@@ -26,11 +27,11 @@ public class UserService {
     }
 
     final UUID id = UUID.randomUUID();
-    final UserI user =
-        new UserI(
+    final UserI user = new UserI(
             id,
             UserService.capitalizeWord(registration.name()),
-            registration.email().toLowerCase());
+            registration.email().toLowerCase()
+    );
 
     return userRepository.save(user);
   }

@@ -1,25 +1,10 @@
 package com.redi.shortener.model;
 
 
- public record UserRegistration(String name, String email) {}
+import org.springframework.security.crypto.password.PasswordEncoder;
 
-
-//import lombok.Data;
-//import lombok.RequiredArgsConstructor;
-//import org.springframework.security.crypto.password.PasswordEncoder;
-//
-//@Data
-//@RequiredArgsConstructor
-//public class UserRegistration {
-//  private final String username;
-//  private final String password;
-//  private final String fullname;
-//
-//  public UserI toUser(PasswordEncoder encoder) {
-//    return UserI.builder()
-//        .username(username)
-//        .password(encoder.encode(password))
-//        .fullName(fullname)
-//        .build();
-//  }
-//}
+public record UserRegistration(String name, String email) {
+ public UserI toUser(PasswordEncoder passwordEncoder) {
+     return null;
+ }
+}

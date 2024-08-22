@@ -5,7 +5,7 @@ import com.redi.shortener.model.UserI;
 import com.redi.shortener.services.UserService;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+// import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,8 +16,8 @@ public class UserController {
   @PostMapping("/users")
   public ResponseEntity<UserI> createUser(@RequestBody UserRegistration userRegistration) {
     UserI createdUser = userService.create(userRegistration);
-    return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
-//    return ResponseEntity.ok(createdUser);
+//    return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
+    return ResponseEntity.ok(createdUser);
   }
 
   @GetMapping("/users/{id}")
