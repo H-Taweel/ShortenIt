@@ -1,10 +1,10 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
-import com.redi.shortener.model.CreateShortURLRequest;
-import com.redi.shortener.model.CreateShortURLResponse;
-import com.redi.shortener.model.ExpandShortURLResponse;
-import com.redi.shortener.persistence.URLShortened;
-import com.redi.shortener.repository.URLShortenerRepository;
+import com.shortenit.app.model.CreateShortURLRequest;
+import com.shortenit.app.model.CreateShortURLResponse;
+import com.shortenit.app.model.ExpandShortURLResponse;
+import com.shortenit.app.persistence.URLShortened;
+import com.shortenit.app.repository.URLShortenerRepository;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDateTime;

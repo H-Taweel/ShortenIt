@@ -1,7 +1,7 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
-import com.redi.shortener.model.CreateGreetingRequest;
-import com.redi.shortener.model.Greeting;
+import com.shortenit.app.model.CreateGreetingRequest;
+import com.shortenit.app.model.Greeting;
 import java.util.UUID;
 import org.springframework.stereotype.Service;
 

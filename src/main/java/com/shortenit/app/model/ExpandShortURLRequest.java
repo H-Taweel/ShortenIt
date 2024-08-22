@@ -1,3 +1,3 @@
-package com.redi.shortener.model;
+package com.shortenit.app.model;
 
 public record ExpandShortURLRequest(String shortURLKey) {}

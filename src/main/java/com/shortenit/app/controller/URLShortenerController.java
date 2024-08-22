@@ -1,9 +1,9 @@
-package com.redi.shortener.controller;
+package com.shortenit.app.controller;
 
-import com.redi.shortener.model.CreateShortURLRequest;
-import com.redi.shortener.model.CreateShortURLResponse;
-import com.redi.shortener.model.ExpandShortURLResponse;
-import com.redi.shortener.services.URLShortenerService;
+import com.shortenit.app.model.CreateShortURLRequest;
+import com.shortenit.app.model.CreateShortURLResponse;
+import com.shortenit.app.model.ExpandShortURLResponse;
+import com.shortenit.app.services.URLShortenerService;
 import java.net.URISyntaxException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

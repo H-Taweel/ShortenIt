@@ -1,6 +1,6 @@
-package com.redi.shortener.repository;
+package com.shortenit.app.repository;
 
-import com.redi.shortener.persistence.URLShortened;
+import com.shortenit.app.persistence.URLShortened;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,11 +1,11 @@
-package com.redi.shortener.persistence;
+package com.shortenit.app.persistence;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 
 @Entity
-@Table(name = "url-shortener")
+@Table(name = "url-shortener_DB")
 public class URLShortened {
 
   @Id
