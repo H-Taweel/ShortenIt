@@ -18,20 +18,21 @@ public class URLShortenerController {
   public CreateShortURLResponse shorten(@RequestBody final CreateShortURLRequest request) {
     return urlShortenerService.create(request);
   }
+
   @GetMapping("/{key}")
   public ResponseEntity<ExpandShortURLResponse> expand(@PathVariable final String key)
-          throws URISyntaxException {
+      throws URISyntaxException {
     try {
       ExpandShortURLResponse expandResponse = urlShortenerService.expand(key);
       return ResponseEntity.ok(expandResponse);
     } catch (RuntimeException e) {
       return ResponseEntity.status(HttpStatus.NOT_FOUND)
-              .body(null); // handle expired or missing URLs
+          .body(null); // handle expired or missing URLs
     }
   }
 
-  //  **********the following code would help to redirect according to URL HTTP response*************
-
+  //  **********the following code would help to redirect according to URL HTTP
+  // response*************
 
   //  @GetMapping("/{key}")
   //  public void expand(@PathVariable final String key, HttpServletResponse response)
