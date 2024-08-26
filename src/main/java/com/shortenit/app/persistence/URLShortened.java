@@ -3,6 +3,7 @@ package com.shortenit.app.persistence;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+
 @Entity
 @Table(name = "url-shortener_DB")
 public class URLShortened {
@@ -11,13 +12,14 @@ public class URLShortened {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  //  @Column(name = "URL")
+//  @Column(name = "URL")
   private String url;
 
   private String key;
   private LocalDateTime validUntil;
 
-  public URLShortened() {}
+  public URLShortened() {
+  }
 
   public Long getId() {
     return id;

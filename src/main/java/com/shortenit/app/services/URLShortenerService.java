@@ -30,8 +30,7 @@ public class URLShortenerService {
     final String identifier = RandomStringUtils.randomAlphanumeric(7);
     final URI shortURL = URI.create(domainName + identifier);
     final LocalDateTime validUntil = LocalDateTime.now().plusDays(3);
-    //    final LocalDateTime validUntil = LocalDateTime.now().plusSeconds(60); // **validate to
-    // minute**
+    //    final LocalDateTime validUntil = LocalDateTime.now().plusSeconds(60); // **validate to minute**
     final URLShortened urlShortened = new URLShortened();
     urlShortened.setUrl(request.url().toString());
     urlShortened.setKey(identifier);
@@ -53,8 +52,7 @@ public class URLShortenerService {
   }
 }
 
-  //  **********the following code would help to redirect according to URL HTTP
-  // response*************
+  //  **********the following code would help to redirect according to URL HTTP response*************
 
   //  public ExpandShortURLResponse expand(final String shortURLKey) throws URISyntaxException {
   //    // Retrieve the URLShortened object using the key
