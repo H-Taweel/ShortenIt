@@ -7,9 +7,10 @@ Project for URL Shortener service.
 Please install the following:
 
 * Maven
-* Java 19+
+* Java 17+
 * Curl
 * Postman (optional)
+* Swagger (http://localhost:8080/swagger-ui/index.html)
 
 ## Run locally
 
