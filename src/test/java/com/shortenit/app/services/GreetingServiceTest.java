@@ -1,9 +1,9 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-import com.redi.shortener.model.CreateGreetingRequest;
+import com.shortenit.app.model.CreateGreetingRequest;
 import org.junit.jupiter.api.Test;
 
 class GreetingServiceTest {

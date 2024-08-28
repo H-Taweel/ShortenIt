@@ -1,6 +1,6 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
-import com.redi.shortener.model.TimeStamping;
+import com.shortenit.app.model.TimeStamping;
 import java.time.Instant;
 import org.springframework.stereotype.Service;
 

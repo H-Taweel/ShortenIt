@@ -1,10 +1,10 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
-import com.redi.shortener.model.CreateShortURLRequest;
-import com.redi.shortener.model.CreateShortURLResponse;
-import com.redi.shortener.model.ExpandShortURLResponse;
-import com.redi.shortener.persistence.URLShortened;
-import com.redi.shortener.repository.URLShortenerRepository;
+import com.shortenit.app.model.CreateShortURLRequest;
+import com.shortenit.app.model.CreateShortURLResponse;
+import com.shortenit.app.model.ExpandShortURLResponse;
+import com.shortenit.app.persistence.URLShortened;
+import com.shortenit.app.repository.URLShortenerRepository;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDateTime;
@@ -30,7 +30,8 @@ public class URLShortenerService {
     final String identifier = RandomStringUtils.randomAlphanumeric(7);
     final URI shortURL = URI.create(domainName + identifier);
     final LocalDateTime validUntil = LocalDateTime.now().plusDays(3);
-    //    final LocalDateTime validUntil = LocalDateTime.now().plusSeconds(60); // **validate to minute**
+    //    final LocalDateTime validUntil = LocalDateTime.now().plusSeconds(60); // **validate to
+    // minute**
     final URLShortened urlShortened = new URLShortened();
     urlShortened.setUrl(request.url().toString());
     urlShortened.setKey(identifier);
@@ -52,7 +53,8 @@ public class URLShortenerService {
   }
 }
 
-  //  **********the following code would help to redirect according to URL HTTP response*************
+  //  **********the following code would help to redirect according to URL HTTP
+  // response*************
 
   //  public ExpandShortURLResponse expand(final String shortURLKey) throws URISyntaxException {
   //    // Retrieve the URLShortened object using the key

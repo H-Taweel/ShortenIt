@@ -1,9 +1,9 @@
-package com.redi.shortener.services;
+package com.shortenit.app.services;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-import com.redi.shortener.model.TimeStamping;
+import com.shortenit.app.model.TimeStamping;
 import java.time.Instant;
 import org.junit.jupiter.api.Test;
 

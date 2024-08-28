@@ -1,8 +1,8 @@
-package com.redi.shortener.controller;
+package com.shortenit.app.controller;
 
-import com.redi.shortener.model.CreateGreetingRequest;
-import com.redi.shortener.model.Greeting;
-import com.redi.shortener.services.GreetingService;
+import com.shortenit.app.model.CreateGreetingRequest;
+import com.shortenit.app.model.Greeting;
+import com.shortenit.app.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

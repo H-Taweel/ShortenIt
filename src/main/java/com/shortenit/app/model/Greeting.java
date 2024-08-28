@@ -1,4 +1,4 @@
-package com.redi.shortener.model;
+package com.shortenit.app.model;
 
 import java.util.UUID;
 
